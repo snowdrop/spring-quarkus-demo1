@@ -57,7 +57,7 @@ mvn compile quarkus:dev
         }
     }
     ```            
-2. Update the content of `GreetingController` to become:
+1. Update the content of `GreetingController` to become:
     ```
     package org.acme.spring.web;
     
@@ -77,7 +77,7 @@ mvn compile quarkus:dev
         }
     }
     ```    
-3. Open browser to http://localhost:8080/greeting?name=folks
+1. Open browser to http://localhost:8080/greeting?name=folks
 
 ### Introduce a Service
 
@@ -94,7 +94,7 @@ mvn compile quarkus:dev
        }
    }
     ```            
-2. Update the content of `GreetingController` to become:
+1. Update the content of `GreetingController` to become:
     ```
     package org.acme.spring.web;
     
@@ -118,7 +118,7 @@ mvn compile quarkus:dev
         }
     }
     ```    
-3. Open browser to http://localhost:8080/greeting?name=folks
+1. Open browser to http://localhost:8080/greeting?name=folks
 1. We get an error because we have not made the Service class a bean.
 1. Modify the service class to add an annotation to make it a bean, for instance `@Service`
  ```
@@ -167,7 +167,7 @@ mvn compile quarkus:dev
 1. We get an error because we have not added the property `greeting.message` to the configuration file
 1. Open the `application.properties` file and add:
     ```
-    greeting.message=hola
+    greeting.message=Good Morning
     ``` 
 1. Refresh browser
 
